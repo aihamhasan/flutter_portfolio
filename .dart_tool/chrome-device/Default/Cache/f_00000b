@@ -1,0 +1,555 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/url_launcher_platform_interface/link.dart', 'packages/flutter/src/rendering/stack.dart', 'packages/flutter/src/widgets/platform_view.dart', 'packages/flutter/src/foundation/basic_types.dart', 'packages/flutter/src/gestures/recognizer.dart', 'packages/flutter/src/rendering/platform_view.dart', 'packages/flutter/src/services/platform_views.dart', 'packages/flutter/src/services/system_channels.dart', 'packages/flutter/src/gestures/events.dart'], (function load__packages__url_launcher_web__src__link_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__url_launcher_platform_interface__link$46dart, packages__flutter__src__rendering__stack$46dart, packages__flutter__src__widgets__platform_view$46dart, packages__flutter__src__foundation__basic_types$46dart, packages__flutter__src__gestures__recognizer$46dart, packages__flutter__src__rendering__platform_view$46dart, packages__flutter__src__services__platform_views$46dart, packages__flutter__src__services__system_channels$46dart, packages__flutter__src__gestures__events$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const async = dart_sdk.async;
+  const collection = dart_sdk.collection;
+  const _interceptors = dart_sdk._interceptors;
+  const html = dart_sdk.html;
+  const js_util = dart_sdk.js_util;
+  const _js_helper = dart_sdk._js_helper;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const link = packages__url_launcher_platform_interface__link$46dart.link;
+  const stack = packages__flutter__src__rendering__stack$46dart.src__rendering__stack;
+  const platform_view = packages__flutter__src__widgets__platform_view$46dart.src__widgets__platform_view;
+  const basic_types = packages__flutter__src__foundation__basic_types$46dart.src__foundation__basic_types;
+  const recognizer = packages__flutter__src__gestures__recognizer$46dart.src__gestures__recognizer;
+  const platform_view$ = packages__flutter__src__rendering__platform_view$46dart.src__rendering__platform_view;
+  const platform_views = packages__flutter__src__services__platform_views$46dart.src__services__platform_views;
+  const system_channels = packages__flutter__src__services__system_channels$46dart.src__services__system_channels;
+  const events = packages__flutter__src__gestures__events$46dart.src__gestures__events;
+  var link$ = Object.create(dart.library);
+  var $isEmpty = dartx.isEmpty;
+  var $onClick = dartx.onClick;
+  var $_set = dartx._set;
+  var $_get = dartx._get;
+  var $opacity = dartx.opacity;
+  var $display = dartx.display;
+  var $cursor = dartx.cursor;
+  var $setAttribute = dartx.setAttribute;
+  var $removeAttribute = dartx.removeAttribute;
+  var $remove = dartx.remove;
+  var $target = dartx.target;
+  var $shadowRoot = dartx.shadowRoot;
+  dart._checkModuleNullSafetyMode(false);
+  var T = Object.create({
+    WebLinkDelegateL: () => (T.WebLinkDelegateL = dart.constFn(dart.legacy(link$.WebLinkDelegate)))(),
+    FutureOfvoid: () => (T.FutureOfvoid = dart.constFn(async.Future$(dart.void)))(),
+    LinkViewControllerL: () => (T.LinkViewControllerL = dart.constFn(dart.legacy(link$.LinkViewController)))(),
+    PlatformViewCreationParamsL: () => (T.PlatformViewCreationParamsL = dart.constFn(dart.legacy(platform_view.PlatformViewCreationParams)))(),
+    PlatformViewCreationParamsLToLinkViewControllerL: () => (T.PlatformViewCreationParamsLToLinkViewControllerL = dart.constFn(dart.fnType(T.LinkViewControllerL(), [T.PlatformViewCreationParamsL()])))(),
+    OneSequenceGestureRecognizerL: () => (T.OneSequenceGestureRecognizerL = dart.constFn(dart.legacy(recognizer.OneSequenceGestureRecognizer)))(),
+    FactoryOfOneSequenceGestureRecognizerL: () => (T.FactoryOfOneSequenceGestureRecognizerL = dart.constFn(basic_types.Factory$(T.OneSequenceGestureRecognizerL())))(),
+    FactoryLOfOneSequenceGestureRecognizerL: () => (T.FactoryLOfOneSequenceGestureRecognizerL = dart.constFn(dart.legacy(T.FactoryOfOneSequenceGestureRecognizerL())))(),
+    _HashSetOfFactoryLOfOneSequenceGestureRecognizerL: () => (T._HashSetOfFactoryLOfOneSequenceGestureRecognizerL = dart.constFn(collection._HashSet$(T.FactoryLOfOneSequenceGestureRecognizerL())))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    PlatformViewSurfaceL: () => (T.PlatformViewSurfaceL = dart.constFn(dart.legacy(platform_view.PlatformViewSurface)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    PlatformViewControllerL: () => (T.PlatformViewControllerL = dart.constFn(dart.legacy(platform_views.PlatformViewController)))(),
+    BuildContextLAndPlatformViewControllerLToPlatformViewSurfaceL: () => (T.BuildContextLAndPlatformViewControllerLToPlatformViewSurfaceL = dart.constFn(dart.fnType(T.PlatformViewSurfaceL(), [T.BuildContextL(), T.PlatformViewControllerL()])))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    MouseEventL: () => (T.MouseEventL = dart.constFn(dart.legacy(html.MouseEvent)))(),
+    MouseEventLTovoid: () => (T.MouseEventLTovoid = dart.constFn(dart.fnType(dart.void, [T.MouseEventL()])))(),
+    voidToNull: () => (T.voidToNull = dart.constFn(dart.fnType(core.Null, [dart.void])))(),
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    IdentityMapOfStringL$dynamic: () => (T.IdentityMapOfStringL$dynamic = dart.constFn(_js_helper.IdentityMap$(T.StringL(), dart.dynamic)))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    IdentityMapOfintL$LinkViewControllerL: () => (T.IdentityMapOfintL$LinkViewControllerL = dart.constFn(_js_helper.IdentityMap$(T.intL(), T.LinkViewControllerL())))(),
+    ElementL: () => (T.ElementL = dart.constFn(dart.legacy(html.Element)))(),
+    intLToElementL: () => (T.intLToElementL = dart.constFn(dart.fnType(T.ElementL(), [T.intL()])))()
+  });
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "controller",
+        [_Location_column]: 17,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "gestureRecognizers",
+        [_Location_column]: 17,
+        [_Location_line]: 88,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "hitTestBehavior",
+        [_Location_column]: 17,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2, C[3] || CT.C3, C[4] || CT.C4], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 22,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///C:/Users/Avin%20Ronson/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+3/lib/src/link.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "viewType",
+        [_Location_column]: 13,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onCreatePlatformView",
+        [_Location_column]: 13,
+        [_Location_line]: 78,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "surfaceFactory",
+        [_Location_column]: 13,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.constList([C[7] || CT.C7, C[8] || CT.C8, C[9] || CT.C9], T._LocationL());
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[6] || CT.C6,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 76,
+        [_Location_file]: "file:///C:/Users/Avin%20Ronson/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+3/lib/src/link.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 76,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 20,
+        [_Location_line]: 75,
+        [_Location_file]: "file:///C:/Users/Avin%20Ronson/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+3/lib/src/link.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "fit",
+        [_Location_column]: 7,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 7,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15, C[16] || CT.C16], T._LocationL());
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///C:/Users/Avin%20Ronson/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+3/lib/src/link.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.fn(link$.LinkViewController._onGlobalClick, T.MouseEventLTovoid());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: link.LinkTarget.prototype,
+        [LinkTarget_debugLabel]: "defaultTarget"
+      });
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: link.LinkTarget.prototype,
+        [LinkTarget_debugLabel]: "self"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: link.LinkTarget.prototype,
+        [LinkTarget_debugLabel]: "blank"
+      });
+    },
+    get C21() {
+      return C[21] = dart.fn(link$.LinkViewController._viewFactory, T.intLToElementL());
+    }
+  }, false);
+  var C = Array(22).fill(void 0);
+  var I = [
+    "package:url_launcher_web/src/link.dart",
+    "file:///C:/Users/Avin%20Ronson/AppData/Roaming/Pub/Cache/hosted/pub.dartlang.org/url_launcher_web-0.1.5+3/lib/src/link.dart"
+  ];
+  var link$0 = dart.privateName(link$, "WebLinkDelegate.link");
+  link$.WebLinkDelegate = class WebLinkDelegate extends framework.StatefulWidget {
+    get link() {
+      return this[link$0];
+    }
+    set link(value) {
+      super.link = value;
+    }
+    createState() {
+      return new link$.WebLinkDelegateState.new();
+    }
+  };
+  (link$.WebLinkDelegate.new = function(link, opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    this[link$0] = link;
+    link$.WebLinkDelegate.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = link$.WebLinkDelegate.prototype;
+  dart.addTypeTests(link$.WebLinkDelegate);
+  dart.addTypeCaches(link$.WebLinkDelegate);
+  dart.setMethodSignature(link$.WebLinkDelegate, () => ({
+    __proto__: dart.getMethods(link$.WebLinkDelegate.__proto__),
+    createState: dart.fnType(dart.legacy(link$.WebLinkDelegateState), [])
+  }));
+  dart.setLibraryUri(link$.WebLinkDelegate, I[0]);
+  dart.setFieldSignature(link$.WebLinkDelegate, () => ({
+    __proto__: dart.getFields(link$.WebLinkDelegate.__proto__),
+    link: dart.finalFieldType(dart.legacy(link.LinkInfo))
+  }));
+  var _controller = dart.privateName(link$, "_controller");
+  var _followLink = dart.privateName(link$, "_followLink");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  link$.WebLinkDelegateState = class WebLinkDelegateState extends framework.State$(dart.legacy(link$.WebLinkDelegate)) {
+    didUpdateWidget(oldWidget) {
+      let t0, t0$;
+      T.WebLinkDelegateL().as(oldWidget);
+      super.didUpdateWidget(oldWidget);
+      if (!dart.equals(this.widget.link.uri, oldWidget.link.uri)) {
+        t0 = this[_controller];
+        t0 == null ? null : t0.setUri(this.widget.link.uri);
+      }
+      if (!dart.equals(this.widget.link.target, oldWidget.link.target)) {
+        t0$ = this[_controller];
+        t0$ == null ? null : t0$.setTarget(this.widget.link.target);
+      }
+    }
+    [_followLink]() {
+      link$.LinkViewController.registerHitTest(this[_controller]);
+      return T.FutureOfvoid().value();
+    }
+    build(context) {
+      let t2, t1, t0;
+      return new basic.Stack.new({fit: stack.StackFit.passthrough, children: T.JSArrayOfWidgetL().of([(t0 = this.widget.link, t1 = context, t2 = dart.test(this.widget.link.isDisabled) ? null : dart.bind(this, _followLink), t0.builder(t1, t2)), new basic.Positioned.fill({child: new platform_view.PlatformViewLink.new({viewType: "__url_launcher::link", onCreatePlatformView: dart.fn(params => {
+                let t0;
+                this[_controller] = link$.LinkViewController.fromParams(params, context);
+                t0 = this[_controller];
+                return (() => {
+                  t0.setUri(this.widget.link.uri);
+                  t0.setTarget(this.widget.link.target);
+                  return t0;
+                })();
+              }, T.PlatformViewCreationParamsLToLinkViewControllerL()), surfaceFactory: dart.fn((context, controller) => new platform_view.PlatformViewSurface.new({controller: controller, gestureRecognizers: new (T._HashSetOfFactoryLOfOneSequenceGestureRecognizerL()).new(), hitTestBehavior: platform_view$.PlatformViewHitTestBehavior.transparent, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), T.BuildContextLAndPlatformViewControllerLToPlatformViewSurfaceL()), $creationLocationd_0dea112b090073317d4: C[5] || CT.C5}), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10})]), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13});
+    }
+  };
+  (link$.WebLinkDelegateState.new = function() {
+    this[_controller] = null;
+    link$.WebLinkDelegateState.__proto__.new.call(this);
+    ;
+  }).prototype = link$.WebLinkDelegateState.prototype;
+  dart.addTypeTests(link$.WebLinkDelegateState);
+  dart.addTypeCaches(link$.WebLinkDelegateState);
+  dart.setMethodSignature(link$.WebLinkDelegateState, () => ({
+    __proto__: dart.getMethods(link$.WebLinkDelegateState.__proto__),
+    didUpdateWidget: dart.fnType(dart.void, [dart.legacy(core.Object)]),
+    [_followLink]: dart.fnType(dart.legacy(async.Future$(dart.void)), []),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(link$.WebLinkDelegateState, I[0]);
+  dart.setFieldSignature(link$.WebLinkDelegateState, () => ({
+    __proto__: dart.getFields(link$.WebLinkDelegateState.__proto__),
+    [_controller]: dart.fieldType(dart.legacy(link$.LinkViewController))
+  }));
+  var viewId$ = dart.privateName(link$, "LinkViewController.viewId");
+  var context$ = dart.privateName(link$, "LinkViewController.context");
+  var _element = dart.privateName(link$, "_element");
+  var _uri = dart.privateName(link$, "_uri");
+  var _initialize = dart.privateName(link$, "_initialize");
+  var _onDomClick = dart.privateName(link$, "_onDomClick");
+  var _isInitialized = dart.privateName(link$, "_isInitialized");
+  var _getHtmlTarget = dart.privateName(link$, "_getHtmlTarget");
+  var LinkTarget_debugLabel = dart.privateName(link, "LinkTarget.debugLabel");
+  link$.LinkViewController = class LinkViewController extends platform_views.PlatformViewController {
+    get viewId() {
+      return this[viewId$];
+    }
+    set viewId(value) {
+      super.viewId = value;
+    }
+    get context() {
+      return this[context$];
+    }
+    set context(value) {
+      super.context = value;
+    }
+    static fromParams(params, context) {
+      let viewId = params.id;
+      let controller = new link$.LinkViewController.new(viewId, context);
+      controller[_initialize]().then(core.Null, dart.fn(_ => {
+        let t1, t0;
+        t0 = params;
+        t1 = viewId;
+        t0.onPlatformViewCreated(t1);
+      }, T.voidToNull()));
+      return controller;
+    }
+    static _viewFactory(viewId) {
+      let t0;
+      t0 = link$.LinkViewController._instances[$_get](viewId);
+      return t0 == null ? null : t0[_element];
+    }
+    static _onGlobalClick(event) {
+      let t0;
+      let viewId = link$.getViewIdFromTarget(event);
+      t0 = link$.LinkViewController._instances[$_get](viewId);
+      t0 == null ? null : t0[_onDomClick](event);
+      link$.LinkViewController.unregisterHitTest();
+    }
+    static registerHitTest(controller) {
+      link$.LinkViewController._hitTestedViewId = controller.viewId;
+    }
+    static unregisterHitTest() {
+      link$.LinkViewController._hitTestedViewId = null;
+    }
+    get [_isInitialized]() {
+      return this[_element] != null;
+    }
+    [_initialize]() {
+      return async.async(dart.void, (function* _initialize() {
+        let t0;
+        this[_element] = html.Element.tag("a");
+        js_util.setProperty(this[_element], "__url_launcher::link::viewId", this.viewId);
+        t0 = this[_element].style;
+        (() => {
+          t0[$opacity] = "0";
+          t0[$display] = "block";
+          t0[$cursor] = "unset";
+          return t0;
+        })();
+        this[_element][$setAttribute]("rel", "noreferrer noopener");
+        let args = new (T.IdentityMapOfStringL$dynamic()).from(["id", this.viewId, "viewType", "__url_launcher::link"]);
+        yield system_channels.SystemChannels.platform_views.invokeMethod(dart.void, "create", args);
+      }).bind(this));
+    }
+    [_onDomClick](event) {
+      let isHitTested = link$.LinkViewController._hitTestedViewId == this.viewId;
+      if (!isHitTested) {
+        event.preventDefault();
+        return;
+      }
+      if (dart.test(this[_uri].hasScheme)) {
+        return;
+      }
+      event.preventDefault();
+      let routeName = dart.toString(this[_uri]);
+      link.pushRouteNameToFramework(this.context, routeName);
+    }
+    setUri(uri) {
+      if (!dart.test(this[_isInitialized])) dart.assertFailed(null, I[1], 214, 12, "_isInitialized");
+      this[_uri] = uri;
+      if (uri == null) {
+        this[_element][$removeAttribute]("href");
+      } else {
+        this[_element][$setAttribute]("href", dart.toString(uri));
+      }
+    }
+    setTarget(target) {
+      if (!dart.test(this[_isInitialized])) dart.assertFailed(null, I[1], 225, 12, "_isInitialized");
+      this[_element][$setAttribute]("target", this[_getHtmlTarget](target));
+    }
+    [_getHtmlTarget](target) {
+      switch (target) {
+        case C[18] || CT.C18:
+        case C[19] || CT.C19:
+        {
+          return "_self";
+        }
+        case C[20] || CT.C20:
+        {
+          return "_blank";
+        }
+        default:
+        {
+          dart.throw(core.Exception.new("Unknown LinkTarget value " + dart.str(target) + "."));
+        }
+      }
+    }
+    clearFocus() {
+      return async.async(dart.void, function* clearFocus() {
+      });
+    }
+    dispatchPointerEvent(event) {
+      return async.async(dart.void, function* dispatchPointerEvent() {
+      });
+    }
+    dispose() {
+      return async.async(dart.void, (function* dispose() {
+        if (dart.test(this[_isInitialized])) {
+          if (!dart.equals(link$.LinkViewController._instances[$_get](this.viewId), this)) dart.assertFailed(null, I[1], 256, 14, "_instances[viewId] == this");
+          link$.LinkViewController._instances[$remove](this.viewId);
+          if (dart.test(link$.LinkViewController._instances[$isEmpty])) {
+            yield link$.LinkViewController._clickSubscription.cancel();
+          }
+          yield system_channels.SystemChannels.platform_views.invokeMethod(dart.void, "dispose", this.viewId);
+        }
+      }).bind(this));
+    }
+  };
+  (link$.LinkViewController.new = function(viewId, context) {
+    this[_element] = null;
+    this[_uri] = null;
+    this[viewId$] = viewId;
+    this[context$] = context;
+    if (dart.test(link$.LinkViewController._instances[$isEmpty])) {
+      link$.LinkViewController._clickSubscription = html.window[$onClick].listen(C[17] || CT.C17);
+    }
+    link$.LinkViewController._instances[$_set](this.viewId, this);
+  }).prototype = link$.LinkViewController.prototype;
+  dart.addTypeTests(link$.LinkViewController);
+  dart.addTypeCaches(link$.LinkViewController);
+  dart.setMethodSignature(link$.LinkViewController, () => ({
+    __proto__: dart.getMethods(link$.LinkViewController.__proto__),
+    [_initialize]: dart.fnType(dart.legacy(async.Future$(dart.void)), []),
+    [_onDomClick]: dart.fnType(dart.void, [dart.legacy(html.MouseEvent)]),
+    setUri: dart.fnType(dart.void, [dart.legacy(core.Uri)]),
+    setTarget: dart.fnType(dart.void, [dart.legacy(link.LinkTarget)]),
+    [_getHtmlTarget]: dart.fnType(dart.legacy(core.String), [dart.legacy(link.LinkTarget)]),
+    clearFocus: dart.fnType(dart.legacy(async.Future$(dart.void)), []),
+    dispatchPointerEvent: dart.fnType(dart.legacy(async.Future$(dart.void)), [dart.legacy(events.PointerEvent)]),
+    dispose: dart.fnType(dart.legacy(async.Future$(dart.void)), [])
+  }));
+  dart.setGetterSignature(link$.LinkViewController, () => ({
+    __proto__: dart.getGetters(link$.LinkViewController.__proto__),
+    [_isInitialized]: dart.legacy(core.bool)
+  }));
+  dart.setLibraryUri(link$.LinkViewController, I[0]);
+  dart.setFieldSignature(link$.LinkViewController, () => ({
+    __proto__: dart.getFields(link$.LinkViewController.__proto__),
+    viewId: dart.finalFieldType(dart.legacy(core.int)),
+    context: dart.finalFieldType(dart.legacy(framework.BuildContext)),
+    [_element]: dart.fieldType(dart.legacy(html.Element)),
+    [_uri]: dart.fieldType(dart.legacy(core.Uri))
+  }));
+  dart.defineLazy(link$.LinkViewController, {
+    /*link$.LinkViewController._instances*/get _instances() {
+      return new (T.IdentityMapOfintL$LinkViewControllerL()).new();
+    },
+    set _instances(_) {},
+    /*link$.LinkViewController._hitTestedViewId*/get _hitTestedViewId() {
+      return null;
+    },
+    set _hitTestedViewId(_) {},
+    /*link$.LinkViewController._clickSubscription*/get _clickSubscription() {
+      return null;
+    },
+    set _clickSubscription(_) {}
+  }, true);
+  link$.getViewIdFromTarget = function getViewIdFromTarget(event) {
+    let linkElement = link$.getLinkElementFromTarget(event);
+    if (linkElement != null) {
+      return T.intL().as(js_util.getProperty(linkElement, "__url_launcher::link::viewId"));
+    }
+    return null;
+  };
+  link$.getLinkElementFromTarget = function getLinkElementFromTarget(event) {
+    let target = T.ElementL().as(event[$target]);
+    if (dart.test(link$.isLinkElement(target))) {
+      return target;
+    }
+    if (target[$shadowRoot] != null) {
+      let child = T.ElementL().as(target[$shadowRoot].lastChild);
+      if (dart.test(link$.isLinkElement(child))) {
+        return child;
+      }
+    }
+    return null;
+  };
+  link$.isLinkElement = function isLinkElement(element) {
+    return element.tagName === "A" && dart.test(js_util.hasProperty(element, "__url_launcher::link::viewId"));
+  };
+  dart.copyProperties(link$, {
+    get linkViewFactory() {
+      return C[21] || CT.C21;
+    }
+  });
+  dart.defineLazy(link$, {
+    /*link$.linkViewType*/get linkViewType() {
+      return "__url_launcher::link";
+    },
+    /*link$.linkViewIdProperty*/get linkViewIdProperty() {
+      return "__url_launcher::link::viewId";
+    }
+  }, true);
+  dart.trackLibraries("packages/url_launcher_web/src/link.dart", {
+    "package:url_launcher_web/src/link.dart": link$
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["link.dart"],"names":[],"mappings":"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","file":"../../../../../../../../../../../../D:/packages/url_launcher_web/src/link.dart.lib.js"}');
+  // Exports:
+  return {
+    src__link: link$
+  };
+}));
+
+//# sourceMappingURL=link.dart.lib.js.map

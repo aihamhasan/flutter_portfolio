@@ -1,0 +1,17 @@
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/icudtl.dat
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/flutter_windows.dll
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/url_launcher_windows_plugin.dll
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/1.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/2.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/github.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/img1.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/img2.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/linkedin.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/portfolio.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/assets/stack.png
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/NOTICES
+D:/flutter projects/flutter_portfolio/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf

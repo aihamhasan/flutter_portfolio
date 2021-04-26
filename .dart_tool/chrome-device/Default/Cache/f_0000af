@@ -1,0 +1,2155 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/url_launcher/url_launcher.dart', 'packages/flutter/src/services/clipboard.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/material/colors.dart', 'packages/flutter/src/widgets/single_child_scroll_view.dart', 'packages/responsive_builder/src/widget_builders.dart', 'packages/flutter/src/painting/edge_insets.dart', 'packages/flutter/src/rendering/flex.dart', 'packages/flutter/src/widgets/spacer.dart', 'packages/flutter/src/material/elevated_button.dart', 'packages/sizer/sizer_ext.dart', 'packages/flutter/src/painting/image_resolution.dart', 'packages/google_fonts/src/google_fonts_base.dart', 'packages/flutter/src/painting/box_fit.dart', 'packages/responsive_builder/src/sizing_information.dart'], (function load__packages__flutter_portfolio__homepage_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__url_launcher__url_launcher$46dart, packages__flutter__src__services__clipboard$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__material__colors$46dart, packages__flutter__src__widgets__single_child_scroll_view$46dart, packages__responsive_builder__src__widget_builders$46dart, packages__flutter__src__painting__edge_insets$46dart, packages__flutter__src__rendering__flex$46dart, packages__flutter__src__widgets__spacer$46dart, packages__flutter__src__material__elevated_button$46dart, packages__sizer__sizer_ext$46dart, packages__flutter__src__painting__image_resolution$46dart, packages__google_fonts__src__google_fonts_base$46dart, packages__flutter__src__painting__box_fit$46dart, packages__responsive_builder__src__sizing_information$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _js_helper = dart_sdk._js_helper;
+  const async = dart_sdk.async;
+  const _interceptors = dart_sdk._interceptors;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const text = packages__flutter__src__widgets__widget_span$46dart.src__widgets__text;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const image = packages__flutter__src__widgets__widget_span$46dart.src__widgets__image;
+  const url_launcher = packages__url_launcher__url_launcher$46dart.url_launcher;
+  const clipboard = packages__flutter__src__services__clipboard$46dart.src__services__clipboard;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const flat_button = packages__flutter__src__material__icon_button$46dart.src__material__flat_button;
+  const colors = packages__flutter__src__material__colors$46dart.src__material__colors;
+  const single_child_scroll_view = packages__flutter__src__widgets__single_child_scroll_view$46dart.src__widgets__single_child_scroll_view;
+  const widget_builders = packages__responsive_builder__src__widget_builders$46dart.src__widget_builders;
+  const edge_insets = packages__flutter__src__painting__edge_insets$46dart.src__painting__edge_insets;
+  const flex = packages__flutter__src__rendering__flex$46dart.src__rendering__flex;
+  const spacer = packages__flutter__src__widgets__spacer$46dart.src__widgets__spacer;
+  const elevated_button = packages__flutter__src__material__elevated_button$46dart.src__material__elevated_button;
+  const sizer_ext = packages__sizer__sizer_ext$46dart.sizer_ext;
+  const image_resolution = packages__flutter__src__painting__image_resolution$46dart.src__painting__image_resolution;
+  const google_fonts = packages__google_fonts__src__google_fonts_base$46dart.google_fonts;
+  const box_fit = packages__flutter__src__painting__box_fit$46dart.src__painting__box_fit;
+  const sizing_information = packages__responsive_builder__src__sizing_information$46dart.src__sizing_information;
+  var homepage = Object.create(dart.library);
+  dart._checkModuleNullSafetyMode(false);
+  var T = Object.create({
+    StringL: () => (T.StringL = dart.constFn(dart.legacy(core.String)))(),
+    IdentityMapOfStringL$dynamic: () => (T.IdentityMapOfStringL$dynamic = dart.constFn(_js_helper.IdentityMap$(T.StringL(), dart.dynamic)))(),
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    PaddingL: () => (T.PaddingL = dart.constFn(dart.legacy(basic.Padding)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    SizingInformationL: () => (T.SizingInformationL = dart.constFn(dart.legacy(sizing_information.SizingInformation)))(),
+    BuildContextLAndSizingInformationLToPaddingL: () => (T.BuildContextLAndSizingInformationLToPaddingL = dart.constFn(dart.fnType(T.PaddingL(), [T.BuildContextL(), T.SizingInformationL()])))()
+  });
+  const CT = Object.create(null);
+  dart.defineLazy(CT, {
+    get C1() {
+      return C[1] = dart.constList([], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 29,
+        [_Location_line]: 80,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.constList([C[4] || CT.C4], T._LocationL());
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[3] || CT.C3,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 79,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 43,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.constList([C[7] || CT.C7], T._LocationL());
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[6] || CT.C6,
+        [_Location_name]: null,
+        [_Location_column]: 38,
+        [_Location_line]: 83,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 31,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 31,
+        [_Location_line]: 84,
+        [_Location_file]: null
+      });
+    },
+    get C9() {
+      return C[9] = dart.constList([C[10] || CT.C10, C[11] || CT.C11], T._LocationL());
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 82,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C14() {
+      return C[14] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C13() {
+      return C[13] = dart.constList([C[14] || CT.C14], T._LocationL());
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[13] || CT.C13,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 71,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 32,
+        [_Location_line]: 87,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.constList([C[17] || CT.C17], T._LocationL());
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[16] || CT.C16,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 87,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 33,
+        [_Location_line]: 95,
+        [_Location_file]: null
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 33,
+        [_Location_line]: 96,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 33,
+        [_Location_line]: 97,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20, C[21] || CT.C21, C[22] || CT.C22], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 38,
+        [_Location_line]: 94,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 31,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 31,
+        [_Location_line]: 93,
+        [_Location_file]: null
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 31,
+        [_Location_line]: 94,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.constList([C[25] || CT.C25, C[26] || CT.C26, C[27] || CT.C27], T._LocationL());
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[24] || CT.C24,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 91,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 100,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 29,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C29() {
+      return C[29] = dart.constList([C[30] || CT.C30, C[31] || CT.C31], T._LocationL());
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[29] || CT.C29,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 99,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 105,
+        [_Location_file]: null
+      });
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 29,
+        [_Location_line]: 106,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.constList([C[34] || CT.C34, C[35] || CT.C35], T._LocationL());
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[33] || CT.C33,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 104,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 41,
+        [_Location_line]: 117,
+        [_Location_file]: null
+      });
+    },
+    get C37() {
+      return C[37] = dart.constList([C[38] || CT.C38], T._LocationL());
+    },
+    get C36() {
+      return C[36] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[37] || CT.C37,
+        [_Location_name]: null,
+        [_Location_column]: 44,
+        [_Location_line]: 116,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 37,
+        [_Location_line]: 114,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 37,
+        [_Location_line]: 115,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 37,
+        [_Location_line]: 116,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.constList([C[41] || CT.C41, C[42] || CT.C42, C[43] || CT.C43], T._LocationL());
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[40] || CT.C40,
+        [_Location_name]: null,
+        [_Location_column]: 40,
+        [_Location_line]: 113,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 33,
+        [_Location_line]: 112,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 33,
+        [_Location_line]: 113,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.constList([C[46] || CT.C46, C[47] || CT.C47], T._LocationL());
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[45] || CT.C45,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 111,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 33,
+        [_Location_line]: 121,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.constList([C[50] || CT.C50], T._LocationL());
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[49] || CT.C49,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 120,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 41,
+        [_Location_line]: 129,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.constList([C[53] || CT.C53], T._LocationL());
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[52] || CT.C52,
+        [_Location_name]: null,
+        [_Location_column]: 44,
+        [_Location_line]: 128,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 37,
+        [_Location_line]: 126,
+        [_Location_file]: null
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 37,
+        [_Location_line]: 127,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 37,
+        [_Location_line]: 128,
+        [_Location_file]: null
+      });
+    },
+    get C55() {
+      return C[55] = dart.constList([C[56] || CT.C56, C[57] || CT.C57, C[58] || CT.C58], T._LocationL());
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[55] || CT.C55,
+        [_Location_name]: null,
+        [_Location_column]: 40,
+        [_Location_line]: 125,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 33,
+        [_Location_line]: 124,
+        [_Location_file]: null
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 33,
+        [_Location_line]: 125,
+        [_Location_file]: null
+      });
+    },
+    get C60() {
+      return C[60] = dart.constList([C[61] || CT.C61, C[62] || CT.C62], T._LocationL());
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[60] || CT.C60,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 123,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 33,
+        [_Location_line]: 133,
+        [_Location_file]: null
+      });
+    },
+    get C64() {
+      return C[64] = dart.constList([C[65] || CT.C65], T._LocationL());
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[64] || CT.C64,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 132,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 41,
+        [_Location_line]: 141,
+        [_Location_file]: null
+      });
+    },
+    get C67() {
+      return C[67] = dart.constList([C[68] || CT.C68], T._LocationL());
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[67] || CT.C67,
+        [_Location_name]: null,
+        [_Location_column]: 44,
+        [_Location_line]: 140,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 37,
+        [_Location_line]: 138,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 37,
+        [_Location_line]: 139,
+        [_Location_file]: null
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 37,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C70() {
+      return C[70] = dart.constList([C[71] || CT.C71, C[72] || CT.C72, C[73] || CT.C73], T._LocationL());
+    },
+    get C69() {
+      return C[69] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[70] || CT.C70,
+        [_Location_name]: null,
+        [_Location_column]: 40,
+        [_Location_line]: 137,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 33,
+        [_Location_line]: 136,
+        [_Location_file]: null
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 33,
+        [_Location_line]: 137,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.constList([C[76] || CT.C76, C[77] || CT.C77], T._LocationL());
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[75] || CT.C75,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 135,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C80() {
+      return C[80] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 29,
+        [_Location_line]: 110,
+        [_Location_file]: null
+      });
+    },
+    get C79() {
+      return C[79] = dart.constList([C[80] || CT.C80], T._LocationL());
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[79] || CT.C79,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 109,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C83() {
+      return C[83] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 25,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C82() {
+      return C[82] = dart.constList([C[83] || CT.C83, C[84] || CT.C84], T._LocationL());
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[82] || CT.C82,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 88,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 32,
+        [_Location_line]: 148,
+        [_Location_file]: null
+      });
+    },
+    get C86() {
+      return C[86] = dart.constList([C[87] || CT.C87], T._LocationL());
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[86] || CT.C86,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 148,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 31,
+        [_Location_line]: 156,
+        [_Location_file]: null
+      });
+    },
+    get C89() {
+      return C[89] = dart.constList([C[90] || CT.C90], T._LocationL());
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[89] || CT.C89,
+        [_Location_name]: null,
+        [_Location_column]: 36,
+        [_Location_line]: 155,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 29,
+        [_Location_line]: 153,
+        [_Location_file]: null
+      });
+    },
+    get C94() {
+      return C[94] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 29,
+        [_Location_line]: 154,
+        [_Location_file]: null
+      });
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 29,
+        [_Location_line]: 155,
+        [_Location_file]: null
+      });
+    },
+    get C92() {
+      return C[92] = dart.constList([C[93] || CT.C93, C[94] || CT.C94, C[95] || CT.C95], T._LocationL());
+    },
+    get C91() {
+      return C[91] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[92] || CT.C92,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 152,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 29,
+        [_Location_line]: 160,
+        [_Location_file]: null
+      });
+    },
+    get C99() {
+      return C[99] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 29,
+        [_Location_line]: 161,
+        [_Location_file]: null
+      });
+    },
+    get C97() {
+      return C[97] = dart.constList([C[98] || CT.C98, C[99] || CT.C99], T._LocationL());
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[97] || CT.C97,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 159,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 32,
+        [_Location_line]: 164,
+        [_Location_file]: null
+      });
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 31,
+        [_Location_line]: 165,
+        [_Location_file]: null
+      });
+    },
+    get C101() {
+      return C[101] = dart.constList([C[102] || CT.C102, C[103] || CT.C103], T._LocationL());
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[101] || CT.C101,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 164,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 25,
+        [_Location_line]: 150,
+        [_Location_file]: null
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 151,
+        [_Location_file]: null
+      });
+    },
+    get C105() {
+      return C[105] = dart.constList([C[106] || CT.C106, C[107] || CT.C107], T._LocationL());
+    },
+    get C104() {
+      return C[104] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[105] || CT.C105,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 149,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 21,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 21,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C109() {
+      return C[109] = dart.constList([C[110] || CT.C110, C[111] || CT.C111], T._LocationL());
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[109] || CT.C109,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 68,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 177,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C115() {
+      return C[115] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 29,
+        [_Location_line]: 183,
+        [_Location_file]: null
+      });
+    },
+    get C114() {
+      return C[114] = dart.constList([C[115] || CT.C115], T._LocationL());
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[114] || CT.C114,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 182,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C118() {
+      return C[118] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 45,
+        [_Location_line]: 189,
+        [_Location_file]: null
+      });
+    },
+    get C117() {
+      return C[117] = dart.constList([C[118] || CT.C118], T._LocationL());
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[117] || CT.C117,
+        [_Location_name]: null,
+        [_Location_column]: 40,
+        [_Location_line]: 189,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C121() {
+      return C[121] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 33,
+        [_Location_line]: 189,
+        [_Location_file]: null
+      });
+    },
+    get C122() {
+      return C[122] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 33,
+        [_Location_line]: 190,
+        [_Location_file]: null
+      });
+    },
+    get C120() {
+      return C[120] = dart.constList([C[121] || CT.C121, C[122] || CT.C122], T._LocationL());
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[120] || CT.C120,
+        [_Location_name]: null,
+        [_Location_column]: 36,
+        [_Location_line]: 188,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C125() {
+      return C[125] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 29,
+        [_Location_line]: 186,
+        [_Location_file]: null
+      });
+    },
+    get C126() {
+      return C[126] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 29,
+        [_Location_line]: 187,
+        [_Location_file]: null
+      });
+    },
+    get C127() {
+      return C[127] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 29,
+        [_Location_line]: 188,
+        [_Location_file]: null
+      });
+    },
+    get C124() {
+      return C[124] = dart.constList([C[125] || CT.C125, C[126] || CT.C126, C[127] || CT.C127], T._LocationL());
+    },
+    get C123() {
+      return C[123] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[124] || CT.C124,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 185,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C130() {
+      return C[130] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 175,
+        [_Location_file]: null
+      });
+    },
+    get C129() {
+      return C[129] = dart.constList([C[130] || CT.C130], T._LocationL());
+    },
+    get C128() {
+      return C[128] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[129] || CT.C129,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 174,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C133() {
+      return C[133] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 33,
+        [_Location_line]: 200,
+        [_Location_file]: null
+      });
+    },
+    get C134() {
+      return C[134] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 33,
+        [_Location_line]: 201,
+        [_Location_file]: null
+      });
+    },
+    get C132() {
+      return C[132] = dart.constList([C[133] || CT.C133, C[134] || CT.C134], T._LocationL());
+    },
+    get C131() {
+      return C[131] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[132] || CT.C132,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 199,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C137() {
+      return C[137] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 33,
+        [_Location_line]: 206,
+        [_Location_file]: null
+      });
+    },
+    get C138() {
+      return C[138] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 33,
+        [_Location_line]: 207,
+        [_Location_file]: null
+      });
+    },
+    get C136() {
+      return C[136] = dart.constList([C[137] || CT.C137, C[138] || CT.C138], T._LocationL());
+    },
+    get C135() {
+      return C[135] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[136] || CT.C136,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 205,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C141() {
+      return C[141] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 45,
+        [_Location_line]: 219,
+        [_Location_file]: null
+      });
+    },
+    get C140() {
+      return C[140] = dart.constList([C[141] || CT.C141], T._LocationL());
+    },
+    get C139() {
+      return C[139] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[140] || CT.C140,
+        [_Location_name]: null,
+        [_Location_column]: 48,
+        [_Location_line]: 218,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C144() {
+      return C[144] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 41,
+        [_Location_line]: 216,
+        [_Location_file]: null
+      });
+    },
+    get C145() {
+      return C[145] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 41,
+        [_Location_line]: 217,
+        [_Location_file]: null
+      });
+    },
+    get C146() {
+      return C[146] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 41,
+        [_Location_line]: 218,
+        [_Location_file]: null
+      });
+    },
+    get C143() {
+      return C[143] = dart.constList([C[144] || CT.C144, C[145] || CT.C145, C[146] || CT.C146], T._LocationL());
+    },
+    get C142() {
+      return C[142] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[143] || CT.C143,
+        [_Location_name]: null,
+        [_Location_column]: 44,
+        [_Location_line]: 215,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C149() {
+      return C[149] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 37,
+        [_Location_line]: 214,
+        [_Location_file]: null
+      });
+    },
+    get C150() {
+      return C[150] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 37,
+        [_Location_line]: 215,
+        [_Location_file]: null
+      });
+    },
+    get C148() {
+      return C[148] = dart.constList([C[149] || CT.C149, C[150] || CT.C150], T._LocationL());
+    },
+    get C147() {
+      return C[147] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[148] || CT.C148,
+        [_Location_name]: null,
+        [_Location_column]: 35,
+        [_Location_line]: 213,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C153() {
+      return C[153] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 37,
+        [_Location_line]: 223,
+        [_Location_file]: null
+      });
+    },
+    get C152() {
+      return C[152] = dart.constList([C[153] || CT.C153], T._LocationL());
+    },
+    get C151() {
+      return C[151] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[152] || CT.C152,
+        [_Location_name]: null,
+        [_Location_column]: 35,
+        [_Location_line]: 222,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C156() {
+      return C[156] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 45,
+        [_Location_line]: 231,
+        [_Location_file]: null
+      });
+    },
+    get C155() {
+      return C[155] = dart.constList([C[156] || CT.C156], T._LocationL());
+    },
+    get C154() {
+      return C[154] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[155] || CT.C155,
+        [_Location_name]: null,
+        [_Location_column]: 48,
+        [_Location_line]: 230,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C159() {
+      return C[159] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 41,
+        [_Location_line]: 228,
+        [_Location_file]: null
+      });
+    },
+    get C160() {
+      return C[160] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 41,
+        [_Location_line]: 229,
+        [_Location_file]: null
+      });
+    },
+    get C161() {
+      return C[161] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 41,
+        [_Location_line]: 230,
+        [_Location_file]: null
+      });
+    },
+    get C158() {
+      return C[158] = dart.constList([C[159] || CT.C159, C[160] || CT.C160, C[161] || CT.C161], T._LocationL());
+    },
+    get C157() {
+      return C[157] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[158] || CT.C158,
+        [_Location_name]: null,
+        [_Location_column]: 44,
+        [_Location_line]: 227,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C164() {
+      return C[164] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 37,
+        [_Location_line]: 226,
+        [_Location_file]: null
+      });
+    },
+    get C165() {
+      return C[165] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 37,
+        [_Location_line]: 227,
+        [_Location_file]: null
+      });
+    },
+    get C163() {
+      return C[163] = dart.constList([C[164] || CT.C164, C[165] || CT.C165], T._LocationL());
+    },
+    get C162() {
+      return C[162] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[163] || CT.C163,
+        [_Location_name]: null,
+        [_Location_column]: 35,
+        [_Location_line]: 225,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C168() {
+      return C[168] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 37,
+        [_Location_line]: 235,
+        [_Location_file]: null
+      });
+    },
+    get C167() {
+      return C[167] = dart.constList([C[168] || CT.C168], T._LocationL());
+    },
+    get C166() {
+      return C[166] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[167] || CT.C167,
+        [_Location_name]: null,
+        [_Location_column]: 35,
+        [_Location_line]: 234,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C171() {
+      return C[171] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 45,
+        [_Location_line]: 243,
+        [_Location_file]: null
+      });
+    },
+    get C170() {
+      return C[170] = dart.constList([C[171] || CT.C171], T._LocationL());
+    },
+    get C169() {
+      return C[169] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[170] || CT.C170,
+        [_Location_name]: null,
+        [_Location_column]: 48,
+        [_Location_line]: 242,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C174() {
+      return C[174] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 41,
+        [_Location_line]: 240,
+        [_Location_file]: null
+      });
+    },
+    get C175() {
+      return C[175] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 41,
+        [_Location_line]: 241,
+        [_Location_file]: null
+      });
+    },
+    get C176() {
+      return C[176] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 41,
+        [_Location_line]: 242,
+        [_Location_file]: null
+      });
+    },
+    get C173() {
+      return C[173] = dart.constList([C[174] || CT.C174, C[175] || CT.C175, C[176] || CT.C176], T._LocationL());
+    },
+    get C172() {
+      return C[172] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[173] || CT.C173,
+        [_Location_name]: null,
+        [_Location_column]: 44,
+        [_Location_line]: 239,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C179() {
+      return C[179] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onPressed",
+        [_Location_column]: 37,
+        [_Location_line]: 238,
+        [_Location_file]: null
+      });
+    },
+    get C180() {
+      return C[180] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 37,
+        [_Location_line]: 239,
+        [_Location_file]: null
+      });
+    },
+    get C178() {
+      return C[178] = dart.constList([C[179] || CT.C179, C[180] || CT.C180], T._LocationL());
+    },
+    get C177() {
+      return C[177] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[178] || CT.C178,
+        [_Location_name]: null,
+        [_Location_column]: 35,
+        [_Location_line]: 237,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C183() {
+      return C[183] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 33,
+        [_Location_line]: 212,
+        [_Location_file]: null
+      });
+    },
+    get C182() {
+      return C[182] = dart.constList([C[183] || CT.C183], T._LocationL());
+    },
+    get C181() {
+      return C[181] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[182] || CT.C182,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 211,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C186() {
+      return C[186] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 29,
+        [_Location_line]: 197,
+        [_Location_file]: null
+      });
+    },
+    get C187() {
+      return C[187] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 29,
+        [_Location_line]: 198,
+        [_Location_file]: null
+      });
+    },
+    get C185() {
+      return C[185] = dart.constList([C[186] || CT.C186, C[187] || CT.C187], T._LocationL());
+    },
+    get C184() {
+      return C[184] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[185] || CT.C185,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 196,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C188() {
+      return C[188] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 250,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C191() {
+      return C[191] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 33,
+        [_Location_line]: 255,
+        [_Location_file]: null
+      });
+    },
+    get C192() {
+      return C[192] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 33,
+        [_Location_line]: 256,
+        [_Location_file]: null
+      });
+    },
+    get C193() {
+      return C[193] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 33,
+        [_Location_line]: 257,
+        [_Location_file]: null
+      });
+    },
+    get C190() {
+      return C[190] = dart.constList([C[191] || CT.C191, C[192] || CT.C192, C[193] || CT.C193], T._LocationL());
+    },
+    get C189() {
+      return C[189] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[190] || CT.C190,
+        [_Location_name]: null,
+        [_Location_column]: 38,
+        [_Location_line]: 254,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C196() {
+      return C[196] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 31,
+        [_Location_line]: 252,
+        [_Location_file]: null
+      });
+    },
+    get C197() {
+      return C[197] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 31,
+        [_Location_line]: 253,
+        [_Location_file]: null
+      });
+    },
+    get C198() {
+      return C[198] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 31,
+        [_Location_line]: 254,
+        [_Location_file]: null
+      });
+    },
+    get C195() {
+      return C[195] = dart.constList([C[196] || CT.C196, C[197] || CT.C197, C[198] || CT.C198], T._LocationL());
+    },
+    get C194() {
+      return C[194] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[195] || CT.C195,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 251,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C201() {
+      return C[201] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 195,
+        [_Location_file]: null
+      });
+    },
+    get C200() {
+      return C[200] = dart.constList([C[201] || CT.C201], T._LocationL());
+    },
+    get C199() {
+      return C[199] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[200] || CT.C200,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 194,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C204() {
+      return C[204] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "fit",
+        [_Location_column]: 31,
+        [_Location_line]: 269,
+        [_Location_file]: null
+      });
+    },
+    get C205() {
+      return C[205] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "image",
+        [_Location_column]: 31,
+        [_Location_line]: 270,
+        [_Location_file]: null
+      });
+    },
+    get C203() {
+      return C[203] = dart.constList([C[204] || CT.C204, C[205] || CT.C205], T._LocationL());
+    },
+    get C202() {
+      return C[202] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[203] || CT.C203,
+        [_Location_name]: null,
+        [_Location_column]: 36,
+        [_Location_line]: 268,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C208() {
+      return C[208] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 29,
+        [_Location_line]: 266,
+        [_Location_file]: null
+      });
+    },
+    get C209() {
+      return C[209] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "height",
+        [_Location_column]: 29,
+        [_Location_line]: 267,
+        [_Location_file]: null
+      });
+    },
+    get C210() {
+      return C[210] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 29,
+        [_Location_line]: 268,
+        [_Location_file]: null
+      });
+    },
+    get C207() {
+      return C[207] = dart.constList([C[208] || CT.C208, C[209] || CT.C209, C[210] || CT.C210], T._LocationL());
+    },
+    get C206() {
+      return C[206] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[207] || CT.C207,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 265,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C211() {
+      return C[211] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 273,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C214() {
+      return C[214] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 33,
+        [_Location_line]: 278,
+        [_Location_file]: null
+      });
+    },
+    get C215() {
+      return C[215] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 33,
+        [_Location_line]: 279,
+        [_Location_file]: null
+      });
+    },
+    get C213() {
+      return C[213] = dart.constList([C[214] || CT.C214, C[215] || CT.C215], T._LocationL());
+    },
+    get C212() {
+      return C[212] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[213] || CT.C213,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 277,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C218() {
+      return C[218] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "data",
+        [_Location_column]: 36,
+        [_Location_line]: 283,
+        [_Location_file]: null
+      });
+    },
+    get C219() {
+      return C[219] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "style",
+        [_Location_column]: 35,
+        [_Location_line]: 284,
+        [_Location_file]: null
+      });
+    },
+    get C217() {
+      return C[217] = dart.constList([C[218] || CT.C218, C[219] || CT.C219], T._LocationL());
+    },
+    get C216() {
+      return C[216] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[217] || CT.C217,
+        [_Location_name]: null,
+        [_Location_column]: 31,
+        [_Location_line]: 283,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C222() {
+      return C[222] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "crossAxisAlignment",
+        [_Location_column]: 29,
+        [_Location_line]: 275,
+        [_Location_file]: null
+      });
+    },
+    get C223() {
+      return C[223] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 29,
+        [_Location_line]: 276,
+        [_Location_file]: null
+      });
+    },
+    get C221() {
+      return C[221] = dart.constList([C[222] || CT.C222, C[223] || CT.C223], T._LocationL());
+    },
+    get C220() {
+      return C[220] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[221] || CT.C221,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 274,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C226() {
+      return C[226] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 25,
+        [_Location_line]: 262,
+        [_Location_file]: null
+      });
+    },
+    get C227() {
+      return C[227] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 264,
+        [_Location_file]: null
+      });
+    },
+    get C225() {
+      return C[225] = dart.constList([C[226] || CT.C226, C[227] || CT.C227], T._LocationL());
+    },
+    get C224() {
+      return C[224] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[225] || CT.C225,
+        [_Location_name]: null,
+        [_Location_column]: 23,
+        [_Location_line]: 261,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C230() {
+      return C[230] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "mainAxisAlignment",
+        [_Location_column]: 21,
+        [_Location_line]: 172,
+        [_Location_file]: null
+      });
+    },
+    get C231() {
+      return C[231] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 21,
+        [_Location_line]: 173,
+        [_Location_file]: null
+      });
+    },
+    get C229() {
+      return C[229] = dart.constList([C[230] || CT.C230, C[231] || CT.C231], T._LocationL());
+    },
+    get C228() {
+      return C[228] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[229] || CT.C229,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 171,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C234() {
+      return C[234] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "padding",
+        [_Location_column]: 13,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C235() {
+      return C[235] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 13,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C233() {
+      return C[233] = dart.constList([C[234] || CT.C234, C[235] || CT.C235], T._LocationL());
+    },
+    get C232() {
+      return C[232] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[233] || CT.C233,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 65,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C238() {
+      return C[238] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "builder",
+        [_Location_column]: 34,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C237() {
+      return C[237] = dart.constList([C[238] || CT.C238], T._LocationL());
+    },
+    get C236() {
+      return C[236] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[237] || CT.C237,
+        [_Location_name]: null,
+        [_Location_column]: 16,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C241() {
+      return C[241] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C240() {
+      return C[240] = dart.constList([C[241] || CT.C241], T._LocationL());
+    },
+    get C239() {
+      return C[239] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[240] || CT.C240,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 63,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    },
+    get C244() {
+      return C[244] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 7,
+        [_Location_line]: 62,
+        [_Location_file]: null
+      });
+    },
+    get C245() {
+      return C[245] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C243() {
+      return C[243] = dart.constList([C[244] || CT.C244, C[245] || CT.C245], T._LocationL());
+    },
+    get C242() {
+      return C[242] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[243] || CT.C243,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 61,
+        [_Location_file]: "file:///D:/flutter%20projects/flutter_portfolio/lib/homepage.dart"
+      });
+    }
+  }, false);
+  var C = Array(246).fill(void 0);
+  var I = ["package:flutter_portfolio/homepage.dart"];
+  homepage.Homepage = class Homepage extends framework.StatefulWidget {
+    createState() {
+      return new homepage._HomepageState.new();
+    }
+  };
+  (homepage.Homepage.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    homepage.Homepage.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = homepage.Homepage.prototype;
+  dart.addTypeTests(homepage.Homepage);
+  dart.addTypeCaches(homepage.Homepage);
+  dart.setMethodSignature(homepage.Homepage, () => ({
+    __proto__: dart.getMethods(homepage.Homepage.__proto__),
+    createState: dart.fnType(dart.legacy(homepage._HomepageState), [])
+  }));
+  dart.setLibraryUri(homepage.Homepage, I[0]);
+  var _launchURLmail = dart.privateName(homepage, "_launchURLmail");
+  var _launchURL = dart.privateName(homepage, "_launchURL");
+  var _launchURL1 = dart.privateName(homepage, "_launchURL1");
+  var _launchURL2 = dart.privateName(homepage, "_launchURL2");
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  homepage._HomepageState = class _HomepageState extends framework.State$(dart.legacy(homepage.Homepage)) {
+    [_launchURLmail]() {
+      return async.async(dart.void, function* _launchURLmail() {
+        let params = core._Uri.new({scheme: "mailto", path: "aihamhasan04@gmail.com", queryParameters: new (T.IdentityMapOfStringL$dynamic()).from(["subject", "Example Subject & Symbols are allowed!"])});
+        let url = dart.toString(params);
+        try {
+          yield url_launcher.launch(url);
+        } catch (e$) {
+          let e = dart.getThrown(e$);
+          yield clipboard.Clipboard.getData("aihamhasan04@gmail.com");
+        }
+      });
+    }
+    [_launchURL]() {
+      return async.async(dart.void, function* _launchURL() {
+        return dart.test(yield url_launcher.canLaunch(homepage._HomepageState._url)) ? (yield url_launcher.launch(homepage._HomepageState._url)) : dart.throw("Could not launch " + dart.str(homepage._HomepageState._url));
+      });
+    }
+    [_launchURL1]() {
+      return async.async(dart.void, function* _launchURL1() {
+        return dart.test(yield url_launcher.canLaunch("https://github.com/aihamhasan")) ? (yield url_launcher.launch("https://github.com/aihamhasan")) : dart.throw("Could not launch " + "https://github.com/aihamhasan");
+      });
+    }
+    [_launchURL2]() {
+      return async.async(dart.void, function* _launchURL2() {
+        return dart.test(yield url_launcher.canLaunch(homepage._HomepageState._url2)) ? (yield url_launcher.launch(homepage._HomepageState._url2)) : dart.throw("Could not launch " + dart.str(homepage._HomepageState._url2));
+      });
+    }
+    build(context) {
+      return new scaffold.Scaffold.new({backgroundColor: colors.Colors.teal._get(50), body: new single_child_scroll_view.SingleChildScrollView.new({child: new widget_builders.ResponsiveBuilder.new({builder: dart.fn((context, size) => new basic.Padding.new({padding: new edge_insets.EdgeInsets.all(16.0), child: dart.test(size.isMobile) ? new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: T.JSArrayOfWidgetL().of([new basic.Row.new({children: T.JSArrayOfWidgetL().of([new spacer.Spacer.new({$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), new basic.SizedBox.new({width: 30.0, $creationLocationd_0dea112b090073317d4: C[2] || CT.C2}), new elevated_button.ElevatedButton.new({child: new text.Text.new("Contact", {$creationLocationd_0dea112b090073317d4: C[5] || CT.C5}), onPressed: dart.bind(this, _launchURLmail), $creationLocationd_0dea112b090073317d4: C[8] || CT.C8})]), $creationLocationd_0dea112b090073317d4: C[12] || CT.C12}), new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C[15] || CT.C15}), new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new container.Container.new({width: sizer_ext['SizerExt|get#w'](100.0), height: sizer_ext['SizerExt|get#h'](40.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/img1.png"), width: sizer_ext['SizerExt|get#w'](85.0), height: sizer_ext['SizerExt|get#h'](40.0), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), $creationLocationd_0dea112b090073317d4: C[23] || CT.C23}), new text.Text.new("Aiham Hasan", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[28] || CT.C28}), new text.Text.new("Flutter Developer Based in Mangalore", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[32] || CT.C32}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new flat_button.FlatButton.new({onPressed: dart.bind(this, _launchURL), child: new container.Container.new({width: sizer_ext['SizerExt|get#w'](8.1), height: sizer_ext['SizerExt|get#h'](8.1), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/linkedin.png"), $creationLocationd_0dea112b090073317d4: C[36] || CT.C36}), $creationLocationd_0dea112b090073317d4: C[39] || CT.C39}), $creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), new basic.SizedBox.new({width: sizer_ext['SizerExt|get#w'](3.0), $creationLocationd_0dea112b090073317d4: C[48] || CT.C48}), new flat_button.FlatButton.new({onPressed: dart.bind(this, _launchURL1), child: new container.Container.new({width: sizer_ext['SizerExt|get#w'](7.0), height: sizer_ext['SizerExt|get#h'](7.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/github.png"), $creationLocationd_0dea112b090073317d4: C[51] || CT.C51}), $creationLocationd_0dea112b090073317d4: C[54] || CT.C54}), $creationLocationd_0dea112b090073317d4: C[59] || CT.C59}), new basic.SizedBox.new({width: sizer_ext['SizerExt|get#w'](3.0), $creationLocationd_0dea112b090073317d4: C[63] || CT.C63}), new flat_button.FlatButton.new({onPressed: dart.bind(this, _launchURL2), child: new container.Container.new({width: sizer_ext['SizerExt|get#w'](7.0), height: sizer_ext['SizerExt|get#h'](7.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/stack.png"), $creationLocationd_0dea112b090073317d4: C[66] || CT.C66}), $creationLocationd_0dea112b090073317d4: C[69] || CT.C69}), $creationLocationd_0dea112b090073317d4: C[74] || CT.C74})]), $creationLocationd_0dea112b090073317d4: C[78] || CT.C78})]), $creationLocationd_0dea112b090073317d4: C[81] || CT.C81}), new basic.SizedBox.new({height: 20.0, $creationLocationd_0dea112b090073317d4: C[85] || CT.C85}), new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new container.Container.new({width: sizer_ext['SizerExt|get#w'](90.0), height: sizer_ext['SizerExt|get#h'](40.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/img2.png"), $creationLocationd_0dea112b090073317d4: C[88] || CT.C88}), $creationLocationd_0dea112b090073317d4: C[91] || CT.C91}), new text.Text.new("Specialised in developing Applications", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[96] || CT.C96}), new text.Text.new("for All Platforms using Flutter", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[100] || CT.C100})]), $creationLocationd_0dea112b090073317d4: C[104] || CT.C104})]), $creationLocationd_0dea112b090073317d4: C[108] || CT.C108}) : new basic.Column.new({mainAxisAlignment: flex.MainAxisAlignment.spaceEvenly, children: T.JSArrayOfWidgetL().of([new basic.Row.new({children: T.JSArrayOfWidgetL().of([new spacer.Spacer.new({$creationLocationd_0dea112b090073317d4: C[112] || CT.C112}), new basic.SizedBox.new({width: 30.0, $creationLocationd_0dea112b090073317d4: C[113] || CT.C113}), new basic.SizedBox.new({width: sizer_ext['SizerExt|get#w'](13.0), height: sizer_ext['SizerExt|get#h'](2.0), child: new elevated_button.ElevatedButton.new({child: new text.Text.new("Contact", {$creationLocationd_0dea112b090073317d4: C[116] || CT.C116}), onPressed: dart.bind(this, _launchURLmail), $creationLocationd_0dea112b090073317d4: C[119] || CT.C119}), $creationLocationd_0dea112b090073317d4: C[123] || CT.C123})]), $creationLocationd_0dea112b090073317d4: C[128] || CT.C128}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new text.Text.new("Aiham Hasan", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[131] || CT.C131}), new text.Text.new("Flutter Developer Based in Mangalore", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[135] || CT.C135}), new basic.Row.new({children: T.JSArrayOfWidgetL().of([new flat_button.FlatButton.new({onPressed: dart.bind(this, _launchURL), child: new container.Container.new({width: sizer_ext['SizerExt|get#w'](8.0), height: sizer_ext['SizerExt|get#h'](8.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/linkedin.png"), $creationLocationd_0dea112b090073317d4: C[139] || CT.C139}), $creationLocationd_0dea112b090073317d4: C[142] || CT.C142}), $creationLocationd_0dea112b090073317d4: C[147] || CT.C147}), new basic.SizedBox.new({width: sizer_ext['SizerExt|get#w'](7.0), $creationLocationd_0dea112b090073317d4: C[151] || CT.C151}), new flat_button.FlatButton.new({onPressed: dart.bind(this, _launchURL1), child: new container.Container.new({width: sizer_ext['SizerExt|get#w'](7.0), height: sizer_ext['SizerExt|get#h'](7.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/github.png"), $creationLocationd_0dea112b090073317d4: C[154] || CT.C154}), $creationLocationd_0dea112b090073317d4: C[157] || CT.C157}), $creationLocationd_0dea112b090073317d4: C[162] || CT.C162}), new basic.SizedBox.new({width: sizer_ext['SizerExt|get#w'](7.0), $creationLocationd_0dea112b090073317d4: C[166] || CT.C166}), new flat_button.FlatButton.new({onPressed: dart.bind(this, _launchURL2), child: new container.Container.new({width: sizer_ext['SizerExt|get#w'](7.0), height: sizer_ext['SizerExt|get#h'](7.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/stack.png"), $creationLocationd_0dea112b090073317d4: C[169] || CT.C169}), $creationLocationd_0dea112b090073317d4: C[172] || CT.C172}), $creationLocationd_0dea112b090073317d4: C[177] || CT.C177})]), $creationLocationd_0dea112b090073317d4: C[181] || CT.C181})]), $creationLocationd_0dea112b090073317d4: C[184] || CT.C184}), new spacer.Spacer.new({$creationLocationd_0dea112b090073317d4: C[188] || CT.C188}), new container.Container.new({width: sizer_ext['SizerExt|get#w'](100.0), height: sizer_ext['SizerExt|get#h'](40.0), child: new image.Image.new({image: new image_resolution.AssetImage.new("assets/img1.png"), width: sizer_ext['SizerExt|get#w'](85.0), height: sizer_ext['SizerExt|get#h'](40.0), $creationLocationd_0dea112b090073317d4: C[189] || CT.C189}), $creationLocationd_0dea112b090073317d4: C[194] || CT.C194})]), $creationLocationd_0dea112b090073317d4: C[199] || CT.C199}), new basic.Row.new({mainAxisAlignment: flex.MainAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new container.Container.new({width: sizer_ext['SizerExt|get#w'](95.0), height: sizer_ext['SizerExt|get#h'](35.0), child: new image.Image.new({fit: box_fit.BoxFit.fill, image: new image_resolution.AssetImage.new("assets/img2.png"), $creationLocationd_0dea112b090073317d4: C[202] || CT.C202}), $creationLocationd_0dea112b090073317d4: C[206] || CT.C206}), new spacer.Spacer.new({$creationLocationd_0dea112b090073317d4: C[211] || CT.C211}), new basic.Column.new({crossAxisAlignment: flex.CrossAxisAlignment.start, children: T.JSArrayOfWidgetL().of([new text.Text.new("Specialised in developing Applications", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[212] || CT.C212}), new text.Text.new("for All Platforms using Flutter", {style: google_fonts.GoogleFonts.montserrat({fontSize: sizer_ext['SizerExt|get#sp'](14.0), color: colors.Colors.blueAccent}), $creationLocationd_0dea112b090073317d4: C[216] || CT.C216})]), $creationLocationd_0dea112b090073317d4: C[220] || CT.C220})]), $creationLocationd_0dea112b090073317d4: C[224] || CT.C224})]), $creationLocationd_0dea112b090073317d4: C[228] || CT.C228}), $creationLocationd_0dea112b090073317d4: C[232] || CT.C232}), T.BuildContextLAndSizingInformationLToPaddingL()), $creationLocationd_0dea112b090073317d4: C[236] || CT.C236}), $creationLocationd_0dea112b090073317d4: C[239] || CT.C239}), $creationLocationd_0dea112b090073317d4: C[242] || CT.C242});
+    }
+  };
+  (homepage._HomepageState.new = function() {
+    homepage._HomepageState.__proto__.new.call(this);
+    ;
+  }).prototype = homepage._HomepageState.prototype;
+  dart.addTypeTests(homepage._HomepageState);
+  dart.addTypeCaches(homepage._HomepageState);
+  dart.setMethodSignature(homepage._HomepageState, () => ({
+    __proto__: dart.getMethods(homepage._HomepageState.__proto__),
+    [_launchURLmail]: dart.fnType(dart.void, []),
+    [_launchURL]: dart.fnType(dart.void, []),
+    [_launchURL1]: dart.fnType(dart.void, []),
+    [_launchURL2]: dart.fnType(dart.void, []),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(homepage._HomepageState, I[0]);
+  dart.defineLazy(homepage._HomepageState, {
+    /*homepage._HomepageState._url*/get _url() {
+      return "https://www.linkedin.com/in/aiham-h-29b754192/";
+    },
+    /*homepage._HomepageState._url1*/get _url1() {
+      return "https://github.com/aihamhasan";
+    },
+    /*homepage._HomepageState._url2*/get _url2() {
+      return "https://stackoverflow.com/users/11805213/aihamhasan";
+    }
+  }, true);
+  dart.trackLibraries("packages/flutter_portfolio/homepage.dart", {
+    "package:flutter_portfolio/homepage.dart": homepage
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["homepage.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAUkC;IAAgB;;;;;;EAClD;;;;;;;;;;;;;;;;;;;AAQqB;AACP,qBAAS,uBACT,gBACF,2CACW,6CAAC,WAAW;AAExB,kBAAa,cAAP,MAAM;AACnB;AACmB,UAAjB,MAAM,oBAAO,GAAG;;cACT;AAC0C,UAAjD,MAAgB,4BAAQ;;MAG5B;;;AAee;AAAY,+BAAM,uBAAU,kCACrC,MAAM,oBAAO,iCACb,WAAM,AAAwB,+BAAL;MAAK;;;AAEpB;AAAY,+BAAM,4DAC5B,MAAM,wDACN,WAAM,AAAyB;MAAA;;;AAErB;AAAY,+BAAM,uBAAU,mCACtC,MAAM,oBAAO,kCACb,WAAM,AAAyB,+BAAN;MAAM;;UAEX;AACxB,YAAO,6CACmB,AAAI,wBAAC,WACvB,+DACG,oDAA2B,SAAC,SAAS,SACnC,gCACe,+BAAI,wBACjB,AAAK,IAAD,aACL,yCACuC,8CAC3B,yBACR,6BACY,yBAER,gFAKA,+BACS,+DAET,+CACW,kBAAK,0FACD,6IAGnB,gCAAiB,iEACjB,0CACyC,yCAC7B,yBACR,oCACiB,4BAAN,gBACM,4BAAL,cACD,4BACE,oCAAW,2BACN,4BAAL,eACM,4BAAL,6HAEd,kBACE,uBACmB,+CACA,6BAAL,cAAuB,uFAEvC,kBACE,gDACmB,+CACA,6BAAL,cAAuB,uFAEvC,6BACY,yBACR,qDACa,0BACJ,oCACQ,4BAAJ,cACK,4BAAJ,aACD,4BAEC,oCAAW,yMAEzB,+BACa,4BAAJ,iEAET,qDACa,2BACJ,oCACQ,4BAAJ,cACK,4BAAJ,aACD,4BAEC,oCAAW,uMAEzB,+BACa,4BAAJ,iEAET,qDACa,2BACJ,oCACQ,4BAAJ,cACK,4BAAJ,aACD,4BACI,oCAAW,gUAOpC,gCAAiB,iEACjB,0CACyC,yCAC7B,yBACR,oCACc,4BAAL,eACM,4BAAL,cACD,4BACE,oCAAW,0IAGtB,kBACE,kDACmB,+CACA,6BAAL,cAAuB,uFAEvC,kBAAK,2CACkB,+CACA,6BAAL,cAAuB,wNAKjD,yCACuC,8CAC3B,yBACR,6BACY,yBAER,oFAKA,+BACS,mEAET,+BACc,4BAAL,eACK,4BAAJ,aACD,+CACI,kBAAK,8FACD,gNAIrB,6BACY,yBACR,0CACyC,yCAC7B,yBACR,kBACE,uBACmB,+CACA,6BAAL,cACI,yFAEpB,kBACE,gDACmB,+CACA,6BAAL,cACI,yFAEpB,6BACY,yBACR,qDACa,0BACJ,oCACQ,4BAAJ,cACK,4BAAJ,aACD,4BACI,oCACH,+MAEd,+BACa,4BAAJ,mEAET,qDACa,2BACJ,oCACQ,4BAAJ,cACK,4BAAJ,aACD,4BACI,oCACH,6MAEd,+BACa,4BAAJ,mEAET,qDACa,2BACJ,oCACQ,4BAAJ,cACK,4BAAJ,aACD,4BACI,oCACH,0UAMtB,oFACA,oCACiB,4BAAN,gBACM,4BAAL,cACD,4BACE,oCAAW,2BACN,4BAAL,eACM,4BAAL,gMAIlB,sCACuC,wCAE3B,yBACR,oCACc,4BAAL,eACM,4BAAL,cACD,0BACO,4BACL,oCAAW,8IAGtB,oFACA,0CACyC,yCAC7B,yBACR,kBACE,kDACmB,+CACA,6BAAL,cACI,yFAEpB,kBAAK,2CACkB,+CACA,6BAAL,cACI;IAWlD;;;;;EACF;;;;;;;;;;;;;MA1Re,4BAAI;;;MACJ,6BAAK;;;MACL,6BAAK","file":"../../../packages/flutter_portfolio/homepage.dart.lib.js"}');
+  // Exports:
+  return {
+    homepage: homepage
+  };
+}));
+
+//# sourceMappingURL=homepage.dart.lib.js.map
