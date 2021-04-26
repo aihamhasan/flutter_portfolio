@@ -11,7 +11,7 @@ class Homepage extends StatefulWidget {
   _HomepageState createState() => _HomepageState();
 }
 
-class _HomepageState extends State<Homepage> {  
+class _HomepageState extends State<Homepage> {
   @override
   static const _url = 'https://www.linkedin.com/in/aiham-h-29b754192/';
   static const _url1 = 'https://github.com/aihamhasan';
@@ -21,7 +21,7 @@ class _HomepageState extends State<Homepage> {
     final Uri params = Uri(
       scheme: 'mailto',
       path: 'aihamhasan04@gmail.com',
-      queryParameters: {'subject': 'Example Subject & Symbols are allowed!'},
+      queryParameters: {'subject': 'Subject'},
     );
     String url = params.toString();
     try {
