@@ -9,7 +9,7 @@ https://aihamhasan.github.io/ is a Responsive and Simple App Portfolio compatibl
 
 
 Mobile UI
-<img src="https://github.com/aihamhasan/flutter_portfolio/blob/main/images/mobileui.png?raw=true" width="250" height="400" />
+<img src="https://github.com/aihamhasan/flutter_portfolio/blob/main/images/mobileui.png?raw=true" width="400" height="650" />
 
 Web UI
 <img src="https://github.com/aihamhasan/flutter_portfolio/blob/main/images/webui.png?raw=true" />
