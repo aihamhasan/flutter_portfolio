@@ -2,6 +2,6 @@
 
 https://aihamhasan.github.io/
 
-<img src="https://imgur.com/a/M3rby7S.jpg" />
+<img src="https://imgur.com/a/M3rby7S.jpeg" />
 
 
