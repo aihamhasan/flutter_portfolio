@@ -2,6 +2,6 @@
 
 https://aihamhasan.github.io/
 
-<img src="https://imgur.com/a/AuTbBQh.png" />
+<img src="https://i.imgur.com/a/AuTbBQh.png" />
 
 
