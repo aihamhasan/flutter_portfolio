@@ -32,19 +32,6 @@ class _HomepageState extends State<Homepage> {
     }
   }
 
-  // launchMailto() async {
-  //   final mailtoLink = Mailto(
-  //     to: ['aihamhasan04@gmail.com'],
-  //     cc: ['aihamhasan04@gmail.com', 'cc2@example.com'],
-  //     subject: 'Hi Aiham',
-  //     body: 'I had a query Regarding',
-  //   );
-  //   // Convert the Mailto instance into a string.
-  //   // Use either Dart's string interpolation
-  //   // or the toString() method.
-  //   await launch('$mailtoLink');
-  // }
-
   void _launchURL() async => await canLaunch(_url)
       ? await launch(_url)
       : throw 'Could not launch $_url';
@@ -102,7 +89,7 @@ class _HomepageState extends State<Homepage> {
                                 fontSize: 14.0.sp, color: Colors.blueAccent),
                           ),
                           Text(
-                            "Flutter Developer Based in Mangalore",
+                            "Software Engineer -Flutter Based in Mangalore, India",
                             style: GoogleFonts.montserrat(
                                 fontSize: 14.0.sp, color: Colors.blueAccent),
                           ),
@@ -203,7 +190,13 @@ class _HomepageState extends State<Homepage> {
                                     color: Colors.blueAccent),
                               ),
                               Text(
-                                "Flutter Developer Based in Mangalore",
+                                "Software Engineer -Flutter Based in",
+                                style: GoogleFonts.montserrat(
+                                    fontSize: 14.0.sp,
+                                    color: Colors.blueAccent),
+                              ),
+                              Text(
+                                "Mangalore, India",
                                 style: GoogleFonts.montserrat(
                                     fontSize: 14.0.sp,
                                     color: Colors.blueAccent),
