@@ -4,7 +4,6 @@
   </a>
 </p>
 
-https://aihamhasan.github.io/
 
 https://aihamhasan.github.io/ is a Responsive and Simple App Portfolio compatible for Mobile, Web and Desktop built  with <a href="https://flutter.dev/" target="_blank">Flutter SDK</a>. 
 
