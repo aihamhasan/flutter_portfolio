@@ -25,6 +25,6 @@ If you found this project useful, then please consider giving it a :star: on Git
 
 ### Aiham Hasan
 
-Flutter Developer. Passionate #Flutter.
+Flutter Developer. Passionate about #Flutter.
 
 <a href="https://www.linkedin.com/in/aiham-h-29b754192/"><img src="https://github.com/aritraroy/social-icons/blob/master/linkedin-icon.png?raw=true" width="60"></a>
